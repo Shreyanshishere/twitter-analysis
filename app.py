@@ -11,7 +11,7 @@ def home():
 def predict1():
     st=request.form['tweet']
     res=predict(st)[0]
-    # return f"your result is "+str(lis[res]) 
+    # return f"your result is the "+str(lis[res]) 
     res= "your tweet is analyzed as a "+str(lis[res])
     return render_template('index.html',result=res)
 if __name__=="__main__":
